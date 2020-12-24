@@ -1,0 +1,601 @@
+/* ......... *//* ........Body...... *//* ......... */
+h1, h2, h3, h4, h5, h6, p, p.h2, p.h4, .h4, a, span, p.display-4, h4.card-title, h2.category-text {
+    font-family: 'Trebuchet-MS' !important;
+}
+
+/*....To be effected later...*/
+/*.basic-service {
+    background: url(../img/3.jpg) no-repeat center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;*/
+}
+
+
+/* ......... *//* ....Customized Styles.... *//* ......... */
+/* Tag Selector */
+/* HR */
+hr.gradient {
+    height: 1px;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+hr.styled {
+    border: 6px dotted orangered;
+    border-bottom: none;
+    margin: 5px auto;
+    width: 5%;
+}
+
+hr.blog {
+  width: 100%;
+  position: relative;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+hr.blog::before {
+  background-color: orangered;
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 15%;
+}
+
+/* Links */
+a.tdn {
+  text-decoration: none;
+}
+
+a.tdn:hover {
+  color: orangered;
+}
+
+ul.nav > li.nav-item > a.nav-link:hover {
+  background: var(--orange);
+  border-radius: 10%;
+}
+
+/* Box Shadow */
+div.shadow {
+    box-shadow: 10px 10px 10px black;
+}
+
+
+/* Class Selector */
+.fontStyle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.myTextColor {
+    color: orange;
+}
+
+.orange {
+    background: orange;
+}
+
+
+/* ......... *//* Main-Contents *//* ......... */
+/* NavBar */
+div a img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Animation */
+.animate {
+    animation: animate 2s infinite;
+}
+
+@keyframes animate {
+    0% {color: white;}
+    25% {color: orange;}
+    50% {color: orangered;}
+    75% {color: plum;}
+    100% {color: red;}
+}
+
+/* Login Form */
+/* The Modal (bg) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: black; /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box for Login form */
+  .modal-content-login {
+      background-color: transparent;
+      margin: 3% auto; /* 3% from the top and centered */
+      width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+
+/* ......... *//* Home Page */
+
+
+/* ......... *//* What We Do */
+/* Portfolio */
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-background {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.img-text .caption {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text:hover .caption {
+    font-weight: 600;
+    color: white;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+/* ......... *//* Get Tutor */
+#more {
+    display: none;
+}
+
+
+/* ......... *//* About Us */
+/* What We Do */
+  .features-4 .features4-block {
+    background: #f4f4f4;
+  }
+  
+  .features-4 .features4-grid-inn {
+    padding: 40px 20px;
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    background: #fff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+  
+  .features-4 .features4-grid-inn h5>a {
+    text-decoration: none;
+   }
+
+  .features-4 .features4-grid-inn:hover {
+    background: #f8e2d3;
+  }
+  
+  .features-4 .features4-grid-inn:hover p {
+    color: orange;
+  }
+  
+  .features-4 .features4-block h6 {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ff7315;
+  }
+  
+  .features-4 p.what-para {
+    font-size: 20px;
+    width: 66%;
+    margin: 0 auto;
+  }
+  
+  .features-4 .features4-grid h5 a {
+    font-size: 22px;
+    line-height: 25px;
+    color: #232020;
+    display: block;
+    text-transform: capitalize;
+    margin: 0px 0 12px 0;
+    font-weight: 600;
+  }
+  
+  .features-4 .features4-grid p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+  
+  .features-4 span.fa.icon-fea4 {
+    font-size: 50px;
+    margin-bottom: 16px;
+    color: #ff7315;
+  }
+
+  h3.hny-title span {
+    color: orange;
+  }
+
+  h3.hny-title {
+    font-size: 40px;
+    line-height: 50px;
+    color: #232020;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  @media all and (max-width: 1080px) {
+    .features-4 .features4-grid h5 a {
+      font-size: 18px;
+      line-height: 20px;
+      margin: 0px 0 10px 0;
+    }
+  }
+  
+  @media all and (max-width: 991px) {
+    .features-4 p.what-para {
+      font-size: 16px;
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .features-4 .features4-grid {
+      margin-bottom: 2em;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .features-4 p.what-para {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+
+
+/* ......... *//* Blog */
+/* Post */
+.date {
+    color: #3498db;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.quote {
+    border-left: 5px solid orange;
+    padding-left: 5px;
+}
+
+/* Stick to Top */
+.stickyTop {
+  position: sticky !important;
+}
+
+
+
+/*........................... Footer .............................*/
+.footer-link:hover {
+    border-radius: 15%;
+    border: 1px solid orange;
+}
+
+.indexSocial:hover {
+    border-radius: 15%;
+    border: 1px solid black;
+}
+
+.helpSocial:hover {
+    border-radius: 15%;
+    border: 1px solid white;
+}
+
+
+
+
+/* ..........Media Query_Responsiveness............ */
+/* For mobile screens of 768px and below */
+  /* ......navBar & Brand...... */
+  @media (max-width: 768px) {
+    /* .....motto..... */
+    div#home p#brand {
+      font-size: 55px !important;
+    }
+
+    div#motto {
+      width: 100% !important;
+      padding: 0;
+      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* navToggle & Content */
+    #navButton {
+      position: static;
+      background-color: orange;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #navList {
+      margin: 0 auto;
+      align-content: center;
+      padding-top: 15px;
+    }
+
+    #navList li a {
+      margin: 0 auto;
+      align-content: center;
+      text-align: center;
+    }
+
+    /* .....Login Form..... */
+    div#formCasing-sm{
+      width: 100% !important;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .imgLoginClose {
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+
+    .modal-content-login{
+      width: 100% !important;
+    }
+
+    .close {
+      float: none;
+      text-align: center;
+    }
+
+    #formFooter .col-md-6 {
+      justify-content: center;
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    input {
+      width: 90%;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* What We Do */
+    div#showCase-sm {
+      height: 1400px !important;
+      padding-bottom: 100px;
+    }
+
+    p.animate {
+      font-size: 40px !important;
+    }
+
+    h2.heading {
+      font-size: 30px !important;
+    }
+
+    div.colCont-sm {
+      margin-right: 10px;
+      margin-left: 10px;
+    }   
+
+    /* Contact Us */
+    div.btnCont-resize {
+      width: 50% !important;
+    }
+
+    p.frd {
+      font-size: 40px !important;
+    }
+  }
+
+
+
+  /* For mobile screens of 991px and below */
+  @media (max-width: 991px) {
+    div#motto{
+      width: 100% !important;
+      padding: 0;
+      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+     /* navToggle & Content */
+     #navButton {
+      position: static;
+      background-color: orange;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #navList {
+      margin: 0 auto;
+      align-content: center;
+      padding-top: 15px;
+    }
+
+    #navList li a {
+      margin: 0 auto;
+      align-content: center;
+      text-align: center;
+    }
+
+    /* .....Login Form..... */
+    div#formCasing-sm{
+      width: 50% !important;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .imgLoginClose {
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+    
+    .modal-content-login{
+      width: 100% !important;
+    }
+    
+    .close {
+      float: none;
+      text-align: center;
+    }
+    
+    #formFooter .col-md-6 {
+      justify-content: center;
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    
+    input {
+      width: 90%;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* What We Do */
+    div#showCase-sm {
+      height: 830px !important;
+      padding-bottom: 80px;
+    }
+    
+    p.animate {
+      font-size: 40px !important;
+    }
+    
+    h2.heading {
+      font-size: 30px !important;
+    }
+    
+    /* Advisory Board */
+    .adB {
+      font-size: 33px;
+    }
+
+    .secCont {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;     
+    }
+    
+    .advisor-img {
+      height: 7rem;
+      width: 7rem;
+    }
+    
+    .advName {
+      font-size: large;
+    }
+
+    .advDesc{
+      font-size: medium;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+
+  /* For mobile screens of 1400px and below */
+  @media (max-width: 1400px) {
+      /* .....Login Form..... */
+      div#formCasing-sm {
+        width: 60% !important;
+      }
+
+      div#formCasing {
+        margin: 5px 50px !important;
+      }
+  
+    div.formContent {
+      padding: 50px !important;
+    }
+
+      div.imgLoginClose {
+        margin-right: auto !important;
+        margin-left: auto !important;
+        padding-right: auto !important;
+        padding-left: auto !important;
+      }
+      
+      .modal-content-login{
+        width: 100% !important;
+      }
+      
+      .close {
+        float: none;
+        text-align: center;
+      }
+      
+      #formFooter .col-md-6 {
+        justify-content: center;
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+      }
+      
+      input {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+      }
+  }
+
+/* a href="tel:080Academia", a href="https://api.whatsapp.com/send?phone=23480Academia", 1080,991,600,768, */
