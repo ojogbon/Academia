@@ -13,7 +13,7 @@
 <body>
 <!-- ...................................................Register-Form........................................................... -->
 <div class="container-fluid py-5" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/home-tutor3.jpg'); background-size: cover; background-repeat: no-repeat;">
-    <div id="formCasing" class="container mt-2 w-50 shadow">
+    <div id="formCasing" class="container mt-2 w-50 ml-5 shadow" style="margin-right: auto !important; margin-left: auto !important;">
 
         <div class="text-center shadow">
           <img height= 100px; width= 100px; style="border: 1px solid orange; border-radius: 70%;" src="../img/showcase.jpg"></span>

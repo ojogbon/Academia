@@ -1,18 +1,43 @@
-<?php require_once '../includes/header.php'; ?>
+<!-- 
+  About  Author
+  And some baic info 
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="AI Group Developers' - Adejoju Jeremiah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | Academia O</title>
+    
+    <?php require_once '../includes/header.php'; ?>
+    
+    <!-- page detail - active -->
+    <div class="text-center">
+      <div id="current-page-detail" class="border border-warning rounded shadow container-fluid w-25">
+        <a class="myTextColor tdn text-center h4" href="../index.php">Home</a>
+        <div class="animate d-inline"> >>> </div>
+        <a class="myTextColor tdn text-danger text-center h4" href="#">FAQs</a>
+      </div>
+    </div>
+   
+</div>
+
 
 
 <!-- ..........................................................FAQS...................................................................... -->
-<div class="bg-light">
+<div class="orange">
 
     <div class="pt-5">
         <h1 class="text-center animate font-weight-bold pt-2">Satisfy your curiosity!</h1>
 
-        <p class="display-4 text-muted text-center pt-5 pb-2"><span class="text-danger">F</span><img height="70rem" width="60rem" src="../img/faq.svg"><span class="myTextColor">Qs</span></p>
+        <p class="display-4 text-white text-center pt-5 pb-2"><span class="text-danger">F</span><img height="70rem" width="60rem" src="../img/faq.svg"><span class="text-dark">Q</span>s</p>
         <hr class="styled">
     </div>
 
 <div class="container w-75 pb-5 pt-5">
-  <p class="lead text-secondary">By providing top-quality tutoring in line with relevant curriculum, we help students understand various subjects. Whether you need help to prepare for an exam, get homework done, or want to strengthen specific areas, our experienced and fully vetted tutors will help you achieve your goals.</p>
+  <p class="lead text-white">By providing top-quality tutoring in line with relevant curriculum, we help students understand various subjects. Whether you need help to prepare for an exam, get homework done, or want to strengthen specific areas, our experienced and fully vetted tutors will help you achieve your goals.</p>
 </div>
 
 <div class="container w-50">
@@ -20,7 +45,7 @@
   <hr class="gradient">
 </div>
 
-<div style="padding-bottom:20%; margin-top:10%;" style="postion:relative;">
+<div style="padding-bottom: 8%; margin-top:10%;" style="postion:relative;">
 
     <div class="mt-2" style="postion:absolute; margin-left:55%; transform: rotate(-10deg); position: absolute;">
         <img class="border border-danger" style="border-top-right-radius:50px; border-bottom-left-radius:50px;" height="400rem" width="300rem" src="../img/faqs.png">
@@ -335,20 +360,40 @@
 </div>
 
 
+<!-- Become Tutor -->
+<div class="p-5" style="background: #f4f4f4;">
+  <h1 class="text-center fontStyle pt-5 text-danger">Become<span class="myTextColor"> a Tutor</span></h1>
+  <hr class="styled">
+
+  <p class="lead font-weight-bold text-center text-muted pt-3">Academia O' provides an avenue for experienced teachers to manage and grow their home tutoring business. <br><br> Are you experienced in teaching?</p>
+
+  <div class="container w-50">
+    <a href="o.pages/become-a-tutor.php" class="btn btn-block btn-lg orange text-white mb-5">Apply now!</a>
+  </div>
+</div>
+
+
 <!-- .................................................Contact Us......................................................... -->
 <div class="py-5">
-    <div class="mt-5 pt-5 container w-75">
+    <div class="pt-5 container w-75">
         <p class="h2 text-center text-danger pb-2" id="Contact">Get In<span class="myTextColor"> Touch</span></p>
         <hr class="styled">
         <h3 class="text-center myTextColor pt-4">Do you still have other question you'd love to ask?</h3>
         <br>
-        <p class="text-center text-muted lead">Your feedbacks are very important to us as it can help us improve on our services. We'll also like to know how our tutors are doing.</p>    
+        <p class="text-center text-muted lead container">Your feedbacks are very important to us as it can help us improve on our services. We'll also like to know how our tutors are doing.</p>    
     </div>
-    <br>
 
-    <div class="container w-25 mb-5 pb-5">
-        <a href="../o.pages/contact-us.php" class="btn btn-block btn-sm btn-outline-warning">CONTACT US</a>
-    </div>
+    <div class="row container mx-auto mb-5">
+        <div class="col-md-4">
+            <a class="myTextColor lead font-weight-bold" href="tel:07087767178"><img class="shadow" src="../img/icons/call.png">Give Us a Call</a>
+        </div>
+        <div class="col-md-4">
+            <a class="text-success lead font-weight-bold" href="https://api.whatsapp.com/send?phone=2347087767178"><img class="shadow" src="../img/icons/wa1.jpg" style="border-radius: 50%;">Chat Us on WhatsApp</a>
+        </div>
+        <div class="col-md-4">
+            <a class="text-danger lead font-weight-bold" href="mailto:academiao.mail@gmail.com"><img class="shadow" src="../img/icons/gm1.jpg" style="border-radius: 50%;">Send us a mail</a>
+        </div>
+  </div>
 </div>
 
 

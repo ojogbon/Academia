@@ -1,4 +1,28 @@
-<?php require_once '../includes/header.php'; ?>
+<!-- 
+  About  Author
+  And some baic info 
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="AI Group Developers' - Adejoju Jeremiah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do | Academia O</title>
+    
+    <?php require_once '../includes/header.php'; ?>
+    
+    <!-- page detail - active -->
+    <div class="text-center">
+      <div id="current-page-detail" class="border border-warning rounded shadow container-fluid w-25">
+        <a class="myTextColor tdn text-center h4" href="../index.php">Home</a>
+        <div class="animate d-inline"> >>> </div>
+        <a class="myTextColor tdn text-danger text-center h4" href="#">What We Do</a>
+      </div>
+    </div>
+   
+</div>
 
 <!-- ............................................What We Do Section.................................................... -->
 <div id="wtc" class="orange pb-5">
@@ -220,7 +244,7 @@
 
 
 <!-- ...................................................... Boot-Camps............................................................ -->
-<div id="regBC" class="container-fluid orange pb-5">
+<div id="regBC" class="container-fluid bc-bg pb-5">
   <div class="pt-5">
     <p class="h1 pt-5 pb-3 text-center fontStyle text-danger"><img height="50rem" with="50rem" style="border-radius: 70%;" src="../img/icons/bc.png"><br> Register for a BootCamp?</p>
     <hr class="styled">
@@ -230,14 +254,14 @@
   <div class="container w-75">
     <div class="row py-5">
 
-      <div class="col-lg-3 col-md-6 mb-3 pb-4">
+      <div class="col-lg-3 col-md-6 mb-3 pb-4 shadow">
         <div class="card-header p-0">
           <img src="../img/coding2.jpg" height="150rem" alt="" class="card-img radius-img" />
         </div>
 
         <div class="card-body p-0">
           <p class="text-center pt-2 pb-0">
-            <a href="" class="text-dark tdn font-weight-bold lead">Web Development</a>
+            <a href="" class="myTextColor tdn font-weight-bold lead">Web Development</a>
           </p>
           <p class="text-danger text-center">Front-end,  Back-end, Full-stack <br> <span class="text-light mb-3">PHP, MySQL,Node JS, Mongo DB, Angular JS, etc.</span></p>
           <a href="" class="btn btn-outline-danger btn-sm btn-block shadow">Buy course!</a>
@@ -247,14 +271,14 @@
       </div>
       <!-- //COLUMN   -->
 
-      <div class="col-lg-3 col-md-6 mb-3 pb-4">
+      <div class="col-lg-3 col-md-6 mb-3 pb-4 shadow">
         <div class="card-header p-0">
           <img src="../img/bg.jpg" height="150rem" alt="" class="card-img radius-img" />
         </div>
 
         <div class="card-body p-0">
           <p class="text-center pt-2 pb-0">
-            <a href="" class="text-dark tdn font-weight-bold lead">Mobile Development</a>
+            <a href="" class="myTextColor tdn font-weight-bold lead">Mobile Development</a>
           </p>
           <p class="text-danger text-center">Java, Flutter, iOs, etc..  <br> <span class="text-light mb-3">Develop professional Android & iPhone applications.</span></p>
           <a href="" class="btn btn-outline-danger btn-sm btn-block shadow">Buy course!</a>
@@ -264,14 +288,14 @@
       </div>
       <!-- //COLUMN   -->
 
-      <div class="col-lg-3 col-md-6 mb-3 pb-4">
+      <div class="col-lg-3 col-md-6 mb-3 pb-4 shadow">
         <div class="card-header p-0">
           <img src="../img/icons/news.png" height="150rem" alt="" class="card-img radius-img" />
         </div>
 
         <div class="card-body p-0">
           <p class="text-center pt-2 pb-0">
-            <a href="" class="text-dark tdn font-weight-bold lead">Digital Marketing</a>
+            <a href="" class="myTextColor tdn font-weight-bold lead">Digital Marketing</a>
           </p>
           <p class="text-danger text-center">More website clicks, Thousands of Customers, 5k Fb & IG followers, Google recognition</p>
           <a href="" class="btn btn-outline-danger btn-sm btn-block shadow">Buy course!</a>
@@ -281,14 +305,14 @@
       </div>
       <!-- //COLUMN   -->
 
-      <div class="col-lg-3 col-md-6 mb-3 pb-4">
+      <div class="col-lg-3 col-md-6 mb-3 pb-4 shadow">
         <div class="card-header p-0">
           <img src="../img/it-essential.jpg" height="150rem" alt="" class="card-img radius-img" />
         </div>
 
         <div class="card-body p-0">
           <p class="text-center pt-2 pb-0">
-            <a href="" class="text-dark tdn font-weight-bold lead">IT Essentials</a>
+            <a href="" class="myTextColor tdn font-weight-bold lead">IT Essentials</a>
           </p>
           <p class="text-danger text-center">Hardware & Software <br> <span class="text-light mb-3">Installation, maintenance, troubleshooting  & repairs...</span></p>
           <a href="" class="btn btn-outline-danger btn-sm btn-block shadow">Buy course!</a>
@@ -307,14 +331,14 @@
 
     <div class="row py-5">
 
-      <div class="col-lg-3 col-md-6 mb-3 pb-4">
+      <div class="col-lg-3 col-md-6 mb-3 pb-4 shadow">
         <div class="card-header p-0">
           <img src="../img/graphics1.jpg" height="150rem" alt="" class="card-img radius-img" />
         </div>
 
         <div class="card-body p-0">
           <p class="text-center pt-2 pb-0">
-            <a href="" class="text-dark tdn font-weight-bold lead">Graphics Design</a>
+            <a href="" class="myTextColor tdn font-weight-bold lead">Graphics Design</a>
           </p>
           <p class="text-danger text-center">Photoshop, Corel Draw, Online tools.. <br> <span class="text-light mb-3">Logo, Flyers, Business cards, Posters, Letter header, etc.</span></p>
           <a href="" class="btn btn-outline-danger btn-sm btn-block shadow">Buy course!</a>
@@ -324,14 +348,14 @@
       </div>
       <!-- //COLUMN   -->
 
-      <div class="col-lg-3 col-md-6 mb-3 pb-4">
+      <div class="col-lg-3 col-md-6 mb-3 pb-4 shadow">
         <div class="card-header p-0">
           <img src="../img/art1.jpg" height="150rem" alt="" class="card-img radius-img" />
         </div>
 
         <div class="card-body p-0">
           <p class="text-center pt-2 pb-0">
-            <a href="" class="text-dark tdn font-weight-bold lead">Art</a>
+            <a href="" class="myTextColor tdn font-weight-bold lead">Art</a>
           </p>
           <p class="text-danger text-center">Painting, Pencil works, Print Art, Woodworks.. <br> <span class="text-light mb-3">Portrait, Scapes drawing, Carving, Sculpture, etc.</span></p>
           <a href="" class="btn btn-outline-danger btn-sm btn-block shadow">Buy course!</a>
@@ -341,14 +365,14 @@
       </div>
       <!-- //COLUMN   -->
 
-      <div class="col-lg-3 col-md-6 mb-3 pb-4">
+      <div class="col-lg-3 col-md-6 mb-3 pb-4 shadow">
         <div class="card-header p-0">
           <img src="../img/music6.jpg" height="150rem" alt="" class="card-img radius-img" />
         </div>
 
         <div class="card-body p-0">
           <p class="text-center pt-2 pb-0">
-            <a href="" class="text-dark tdn font-weight-bold lead">Music</a>
+            <a href="" class="myTextColor tdn font-weight-bold lead">Music</a>
           </p>
           <p class="text-danger text-center">Vocals, Musical instruments.. <br> <span class="text-light mb-3">Get trained for vocals, and learn to play guitar, piano, drums, loremIpsum, etc.</span></p>
           <a href="" class="btn btn-outline-danger btn-sm btn-block shadow">Buy Course!</a>
@@ -358,17 +382,17 @@
       </div>
       <!-- //COLUMN   -->
 
-      <div class="col-lg-3 col-md-6 mb-3 pb-4">
+      <div class="col-lg-3 col-md-6 mb-3 pb-4 shadow">
         <div class="card-header p-0">
           <img src="../img/cook1.jpg" height="150rem" alt="" class="card-img radius-img" />
         </div>
 
         <div class="card-body p-0">
           <p class="text-center pt-2 pb-0">
-            <a href="" class="text-dark tdn font-weight-bold lead">Cooking</a>
+            <a href="" class="myTextColor tdn font-weight-bold lead">Cooking</a>
           </p>
           <p class="text-danger text-center">Baking, Frying(Deep & Shallow), Perboiling, Smoking <br> <span class="text-light mb-3">Cakes & Creams, Small Chops, Snacks, etc.</span></p>
-          <a href="" class="btn btn-outline-light btn-sm btn-block shadow">Start!</a>
+          <a href="" class="btn btn-outline-danger btn-sm btn-block shadow">Start!</a>
 
         </div>
       
@@ -385,32 +409,117 @@
 
 
 <!-- ................Join our online class................ -->
-  <div id="regOC" class="row" style="background: #f4f4f4;">
+  <div id="regOC" class="row orange">
 
         <div class="col-md-6 p-0">
             <img height="100%" width="100%" src="../img/onc.png" alt="">
+            <div class="w-25" style="postion: absolute; margin-left: 600px;">
+              <img src="../img/float.jpg" alt="">
+            </div>
         </div>
 
 
         <div class="col-md-6 py-5">
           <div class="mt-3">
-            <h2 class="text-center text-danger">Join our online class</h2>
+            <h1 class="text-center text-danger">Join our online class</h1>
             <hr class="styled">
-            <h3 class="text-center pt-3">Do you prefer a one-on-one online class?</h3>
+            <h3 class="text-center text-muted pt-3">Do you prefer a one-on-one online class?</h3>
             <br>
-            <p class="text-center text-muted lead px-5 pt-2">Tell us where you need help, create a flexible schedule and we will get one of our tutors connected to you via your preferred online platform; Facbook, WhatsApp, Google Classroom, Zoom, etc...</p>
-          
-            <div class="w-25 pt-2" style="postion: absolute; margin-left: 220px;">
-              <img src="../img/float.jpg" alt="">
-            </div>
+            <p class="text-center text-white lead px-5 pt-2">Tell us where you need help, create a flexible schedule and we will get one of our tutors connected to you via your preferred online platform; Facbook, WhatsApp, Google Classroom, Zoom, etc...</p>
           </div>
 
-          <div class="container w-50 pb-3">
-            <a href="../o.pages/get-a-tutor.php" class="btn btn-block btn-lg btn-outline-dark">Start now!</a>
+          <div class="container w-50 py-3">
+            <a href="https://chat.whatsapp.com/2347087767178" class="btn btn-block btn-lg btn-outline-danger"><img class="shadow mb-1 mr-3" src="../img/icons/wa1.jpg" style="border-radius: 50%;"> Start now!</a>
           </div>
         </div>
         
   </div>
+
+
+
+<!--............... Advert................ -->
+<div class="p-5 container">
+  <div class="m-5">
+
+    <h1 class="text-danger font-weight-bold text-center mt-3 mb-2">Ongoing <span class="myTextColor">Registration</span> !!!</h1>
+    <div class="container w-50">
+    <hr class="footer">
+    </div>
+
+    <div class="row mt-5 pt-3 mx-auto">
+
+      <div class="col-lg-6 col-md-12">
+        <div class="text-center">
+
+          <img class="border rounded shadow" src="../img/neco.jpg" height="220rem" width="312rem">
+
+          <h2 class="animate">NECO GCE 2020</h2>
+          <h3 class="text-danger pb-2">Registration</h3>
+          <p class="shadow text-white bg-danger mx-5 lead"><span class="orange mr-5 p-2">Deadline:</span> January 23, 2021.</p>
+          
+          <div class="container w-50">
+            <a href="https://chat.whatsapp.com/2347087767178" class="shadow btn btn-block orange text-white mb-5">Register!</a>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="text-center">
+          
+          <img class="border rounded shadow" src="../img/jamb.jpg" height="220rem">
+
+          <h2 class="animate">JAMB-UTME CLASS</h2>
+          <h3 class="text-danger pb-2">Tutorial</h3>
+          <p class="shadow text-white bg-danger mx-5 lead"><span class="bg-info mr-5 p-2">Commences:</span> January 9, 2021.</p>
+          
+          <div class="container w-50">
+            <a href="https://chat.whatsapp.com/2347087767178" class="shadow btn btn-block orange text-white mb-5">Join now!</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ....................Get Tutor............................ -->
+<div class="row">
+
+        <div class="col-md-6 p-0">
+            <img height="100%" width="100%" src="../img/home-tutor4.jpg">
+        </div>
+
+        <div class="col-md-6 orange px-5 pt-3">
+            <h1 class="text-center fontStyle pt-5 text-danger">Get A<span class="text-white"> Professional</span> Tutor</h1>
+            <hr class="styled">
+
+          <div class="mt-5">
+            <p class="lead my-5 font-weight-bold text-center text-light">Getting a Professional Home Tutor is easier than you think. Just click the button below and you're a step closer to getting the expert tutor you want for your child</p>
+          </div>
+
+          <div class="container w-50">
+            <a href="o.pages/get-a-tutor.php #gtf" class="btn btn-block btn-lg btn-outline-light">Start now!</a>
+          </div>
+        </div>
+
+</div>
+
+
+<!-- Become Tutor -->
+<div class="p-5" style="background: #f4f4f4;">
+  <h1 class="text-center fontStyle pt-5 text-danger">Become<span class="myTextColor"> a Tutor</span></h1>
+  <hr class="styled">
+
+  <p class="lead font-weight-bold text-center text-muted pt-3">Academia O' provides an avenue for experienced teachers to manage and grow their home tutoring business. <br><br> Are you experienced in teaching?</p>
+
+  <div class="container w-50">
+    <a href="o.pages/become-a-tutor.php #btf" class="btn btn-block btn-lg orange text-white mb-5">Apply now!</a>
+  </div>
+</div>
+
 
 
 
@@ -427,10 +536,38 @@
 
 <br>
 
-<div class="container w-25 mb-5 pb-5">
-  <a href="o.pages/contact-us.php" class="btn btn-block btn-lg btn-dark disabled">Register now!</a>
+<div class="container chng w-25 mb-5 pb-5">
+  <a href="o.pages/contact-us.php" class="btn btn-lg btn-block btn-dark disabled">Coming soon!</a>
 </div>
 </div>
+
+
+
+<!-- ........Contact Us......... -->
+<div class="container-fluid py-4" style="background: #f4f4f4;">
+  <div class="pt-5 container w-75">
+      <h2 class="text-center myTextColor pb-2">Get In <span class="text-danger">Touch</span></h2>
+      <hr class="styled">
+      <h3 class="text-center myTextColor pt-4">Do you have question you'd love to ask?</h3>
+      <br>
+      <p class="text-center text-muted lead">Your feedbacks are very important to us as it can help us improve on our services. We'll also like to know how our tutors are doing.</p>    
+  </div>
+  <br>
+
+  <div class="row container mx-auto pb-5">
+    <div class="col-md-4">
+    <a class="myTextColor lead font-weight-bold" href="tel:07087767178"><img class="shadow" src="../img/icons/call.png">Give Us a Call</a>
+    </div>
+    <div class="col-md-4">
+    <a class="text-success lead font-weight-bold" href="https://api.whatsapp.com/send?phone=2347087767178"><img class="shadow" src="../img/icons/wa1.jpg" style="border-radius: 50%;">Chat Us on WhatsApp</a>
+    </div>
+    <div class="col-md-4">
+    <a class="text-danger lead font-weight-bold" href="mailto:academiao.mail@gmail.com"><img class="shadow" src="../img/icons/gm1.jpg" style="border-radius: 50%;">Send us a mail</a>
+    </div>
+  </div>
+</div>
+
+
 
 
 <?php require_once '../includes/footer.php'; ?>

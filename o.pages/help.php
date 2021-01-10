@@ -69,9 +69,9 @@
       <br>
 
       <div class="text-center pt-3">
-          <a href="http://www.facebook.com/academiaOfb" class="mx-5"><img class="helpSocial" src="../img/icons/facebookBlue.png"></a>
-          <a href="http://www.wa.me/2347087767178" class="mx-5"><img class="helpSocial" src="../img/icons/whatsapp.png"></a>
-          <a href="mailto:academiao.mail@gmail.com" class="mx-5"><img class="helpSocial" src="../img/icons/gmail.png"></a>
+          <a href="http://www.facebook.com/academiaOfb" class="mx-5"><img style="border-radius: 50%;" class="helpSocial" src="../img/icons/fb1.jpg"></a>
+          <a href="http://www.wa.me/2347087767178" class="mx-5"><img style="border-radius: 50%;" class="helpSocial" src="../img/icons/wa1.jpg"></a>
+          <a href="mailto:academiao.mail@gmail.com" class="mx-5"><img style="border-radius: 50%;" class="helpSocial" src="../img/icons/gm1.jpg"></a>
       </div>
 
       <br><br><br>

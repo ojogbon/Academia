@@ -1,3 +1,11 @@
+
+<?php 
+
+include "./controllers/central.php";
+include "./controllers/Tutor.php";
+include "./controllers/Student.php";
+
+?>
 <!-- 
   About  Author
   And some baic info 
@@ -79,7 +87,7 @@
                  <div id="formCasing" class="container-fluid p-5">
                     <div id="formCasing-sm" class="container w-50 orange border border-danger" style="border-top-right-radius:50px; border-bottom-left-radius:50px">
                       
-                        <form class="student-can-do-it" action="login.php" method="GET" class="p-5 col-12 shadow">
+                        <form class="student-can-do-it"  method="POST" class="p-5 col-12 shadow">
                           <div class="formContent">
                           
                           <div class="container imgLoginClose w-25 pb-3 text-center">
@@ -91,16 +99,34 @@
                           <br>
 
                             <div class="form-group">
-                                <input type="email" id="email" class="form-control shadow" name="con_email" placeholder="Email">
+                                <input type="text" id="email" class="form-control shadow" name="con_email" placeholder="Username...">
                             </div>
                             <br>
                             
                             <div class="form-group shadow">
-                                <input type="text" id="password" class="form-control" name="password" placeholder="Password">
+                                <input type="password" id="password" class="form-control" name="password" placeholder="Password">
                             </div>
                             <br>
 
-                            <input class="btn btn-lg btn-outline-danger btn-block shadow" type="submit" name="login_button" value="Log in">
+                            <input class="btn btn-lg btn-outline-danger btn-block shadow" type="submit" name="login_button-student" value="Log in">
+
+                            <?php 
+                            
+                            if(isset($_POST["login_button-student"])){
+
+                              $con_email = $_POST["con_email"];
+                              $password = $_POST["password"];
+
+
+                              $key = "1234567opiuyt" ;
+
+                            
+                               loginStudent($student,$key, $con_email,$password);
+                            }
+                        
+                        ?>
+
+
 
                             <div id="formFooter" class="row my-3 container">
                                 <div class="col-md-6">
@@ -126,7 +152,9 @@
                           </div>
                         </form>
 
-                        <form class="tutor-can-do-it" action="login.php" method="GET" class="p-5 col-12 shadow">
+<!-----------||||||||||||||||||||||||||||||||||||----->
+
+                        <form class="tutor-can-do-it"  method="post" class="p-5 col-12 shadow">
                           <div class="formContent">
                           
                           <div class="container imgLoginClose w-25 pb-3 text-center">
@@ -143,11 +171,26 @@
                             <br>
                             
                             <div class="form-group shadow">
-                                <input type="text" id="password" class="form-control" name="password" placeholder="Password">
+                                <input type="password" id="password" class="form-control" name="password" placeholder="Password">
                             </div>
                             <br>
 
-                            <input class="btn btn-lg btn-outline-danger btn-block shadow" type="submit" name="login_button" value="Log in">
+                            <input type="submit" class="btn btn-lg btn-outline-danger btn-block shadow" type="submit" name="login_button" value="Log in">
+
+                            <?php 
+                            
+                                if(isset($_POST["login_button"])){
+
+                                  $con_email = $_POST["con_email"];
+                                  $password = $_POST["password"];
+
+
+                                  $key = "1234567opiuyt" ;
+
+                                  loginTutor ($tutor,$key, $con_email,$password);
+                                }
+                            
+                            ?>
 
                             <div id="formFooter" class="row my-3 container">
                                 <div class="col-md-6">
@@ -340,9 +383,8 @@
   <a href="#home"><img src="img/up.png"></a>
 </div>
 
-
 <!-- ......Pre-Footer...... -->
-<div class="container-fluid bg-dark py-5 shadow">
+<div class="container-fluid orange py-5 shadow">
 
       <div class="text-center pb-3">
         <img height= 120px; width= 120px; style="border: 1px solid orange; border-radius: 70%;" src="img/showcase.jpg">
@@ -351,51 +393,52 @@
 
   <div class="row p-5 shadow container mx-auto">
 
-        <div class="col-md-4 shadow text-center p-3 mb-3" style="color: #f4f4f4;">
-          <h4 class="text-white">About Academia O'</h4>
-          <p>Academia O offers Home Tutors a layer of protection in the collection of their funds but, if any of the following conditions are not met and Academia O becomes unable to collect your payment from the parent, client, or other type of account-holder to whom you gave a tutorial, Academia O cannot guarantee that your payment will be successfully collected, processed and distributed to you.</p>
+        <div class="col-lg-4 col-md-6 shadow text-center p-3 mb-3" style="color: #f4f4f4;">
+          <h4 class="text-danger">About Academia O'</h4>
+          <p class="lead">Academia O is an academic organization. We provide adequate support for all academic pursuits in the country. We focus majorly  on the logistics and the aids necessary to  bringing about succeess in all fields and levels of Education.</p>
+          <p class="shadow text-white lead text-center py-4">Behind Adeline (AOM) school, <br> Off Fajol Hotel,<br> Obantoko, Abeokuta, Ogun State. <br> <a class="text-danger" href="tel:07087767178"><img src="img/icons/call.png"></a></p>
         </div>
 
-        <div class="col-md-4 mb-3 py-5 text-center" style="color: #f4f4f4;">
-          <h4 class="text-white">Helpful | Important links</h4>
-          <ul class="list-unstyled">
+        <div class="col-lg-4 addSHD col-md-6 mb-3 py-5 text-center" style="color: #f4f4f4;">
+          <h4 class="text-danger">Quick links</h4>
+          <hr class="footer">
+          <ul class="list-unstyled lead">
             <li><a href="#mainMenu" class="text-white">Blog</a></li>
             <li><a href="#mainMenu" class="text-white">What We Do</a></li>
             <li><a href="#mainMenu" class="text-white">Get A Home Tutor</a></li>
             <li><a href="#mainMenu" class="text-white">Become An Academia O' Tutor</a></li>
+            <li><a href="o.pages/contact-us.php" class="text-white">Contact Us</a></li>
+            <li><a href="o.pages/about.php" class="text-white">About Academia O'</a></li>
+            <li><a href="#consult" class="text-white">Consultancy</a></li>
+            <li><a href="o.pages/terms-and-policies.php" class="text-white">Terms & Policies</a></li>
           </ul>
         </div>
             
-        <div class="col-md-4 shadow text-center p-3 mb-3" style="color: #f4f4f4;">
-          <h4 class="text-white">Other links</h4>
-          <ul class="list-unstyled">
-            <li><a href="o.pages/about.php" class="text-white">About Academia O'</a></li>
-            <li><a href="#consult" class="text-white">Consultancy</a></li>
-            <li><a href="" class="text-white">Privacy Policy</a></li>
-            <li><a href="" class="text-white">Terms & Conditions</a></li>
-          </ul>
+        <div class="col-lg-4 col-md-8 cenLast shadow text-center p-3 mb-3" style="color: #f4f4f4;">
+          <h4 class="text-danger">Contact Details</h4>
+          <ul class="list-group container font-weight-bold text-center text-danger">
+              <li class="lead shadow font-weight-bold list-group-item myTextColor">Opening days
+                <li class="list-group-item shadow">Mondays-Fridays: 8:00am to 6:00pm</li>
+                <li class="list-group-item shadow">Saturdays: 10:00am to 4:00pm</li>
+                <li class="list-group-item shadow">Sundays: We are closed. You can always reach us on our social platforms below</li>
+              </li>
+            </ul>
+
+          <div class="text-center pt-4">
+            <p class="lead">Connect with us!</p>
+
+            <a class="mx-5" href="http://www.facebook.com/academiaOfb"><img class="helpSocial" src="img/icons/fb1.jpg" style="border-radius: 50%;"></a>
+						<a class="mx-5" href="https://api.whatsapp.com/send?phone=2347087767178"><img class="helpSocial" src="img/icons/wa1.jpg" style="border-radius: 50%;"></a>
+						<a class="mx-5" href="mailto:academiao.mail@gmail.com"><img class="helpSocial" src="img/icons/gm1.jpg" style="border-radius: 50%;"></a>
+          </div>
         </div>
 
   </div>
 
 </div>
 
-
 <!--.....Footer.....-->
-<footer class="my-5">
-
-    <div class="">
-      <h4 class="text-center text-muted py-3">Connect with us!</h4>
-      <br>
-
-      <div class="text-center pt-3">
-          <a href="http://www.facebook.com/academiaOfb" class="mx-5"><img class="indexSocial" src="img/icons/facebookBlue.png"></a>
-          <a href="http://www.wa.me/2347087767178" class="mx-5"><img class="indexSocial" src="img/icons/whatsapp.png"></a>
-          <a href="mailto:academiao.mail@gmail.com" class="mx-5"><img class="indexSocial" src="img/icons/gmail.png"></a>
-      </div>
-
-      <br><br><br>
-
+<footer class="my-4">
       <p class="text-center text-muted lead font-weight-bold font-italic mb-0 pt-3 pb-3">&copy; Academia O' 2020. All rights reserved!</p>
     </div>
 </footer>

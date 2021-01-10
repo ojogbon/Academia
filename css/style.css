@@ -3,16 +3,6 @@ h1, h2, h3, h4, h5, h6, p, p.h2, p.h4, .h4, a, span, p.display-4, h4.card-title,
     font-family: 'Trebuchet-MS' !important;
 }
 
-/*....To be effected later...*/
-/*.basic-service {
-    background: url(../img/3.jpg) no-repeat center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;*/
-}
-
 
 /* ......... *//* ....Customized Styles.... *//* ......... */
 /* Tag Selector */
@@ -28,6 +18,14 @@ hr.styled {
     border-bottom: none;
     margin: 5px auto;
     width: 5%;
+}
+
+hr.footer {
+  border: 4px solid orangered;
+  border-bottom: none;
+  margin-left: 130px;
+  margin-top: 1px;
+  width: 9%;
 }
 
 hr.blog {
@@ -47,17 +45,30 @@ hr.blog::before {
 }
 
 /* Links */
+a:hover {
+  text-decoration: none !important;
+}
+
 a.tdn {
   text-decoration: none;
 }
 
 a.tdn:hover {
-  color: orangered;
+  color: orangered !important;
+}
+
+a.lead.font-weight-bold.text-dark.tdn:hover {
+  color: orangered !important;
 }
 
 ul.nav > li.nav-item > a.nav-link:hover {
-  background: var(--orange);
-  border-radius: 10%;
+  text-shadow: 10px 10px 10px black;
+  font-size: 2rem;
+}
+
+ul.list-unstyled.lead li a.text-white:hover {
+  text-decoration: none;
+  font-size: 23px;
 }
 
 /* Box Shadow */
@@ -86,6 +97,24 @@ div a img {
     height: 30px;
     width: 30px;
 }
+
+@media (max-width: 648px) {
+  #current-page-detail {
+    width: 55% !important;
+  }
+}
+
+@media (min-width: 648px) and (max-width: 1040px) {
+  #current-page-detail {
+    width: 40% !important;
+  }
+}
+
+/* @media all and (max-width: 1080px) {
+  #current-page-detail {
+    width: 50% !important;
+  }
+} */
 
 /* Animation */
 .animate {
@@ -131,8 +160,104 @@ div a img {
     width: 80%; /* Could be more or less, depending on screen size */
   }
 
+  div#formFooter.row div.col-md-6 a:hover {
+    text-decoration: none;
+  }
 
 /* ......... *//* Home Page */
+/* Advisory Team */
+.team-bg {
+  background: url(../img/bg-5.jpg) no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.team-main .team_info h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.team-main .team_name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #232020;
+  text-transform: capitalize;
+  line-height: 32px;
+  margin: 0;
+}
+
+.team-main .team_name:hover {
+  color: #ff7315;
+}
+
+.team-main span.team_role {
+  margin: 0;
+  color: #6b778d;
+}
+
+.team-main img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.team-main img:hover {
+  opacity: 0.9;
+}
+
+.team-main h4.team_phone {
+  font-size: 22px;
+  text-transform: capitalize;
+  line-height: 32px;
+  color: #3a3535;
+}
+
+.team-main .team_info {
+  text-align: center;
+}
+
+.team-main .team span.info {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ff7315;
+  font-size: 16px;
+}
+
+.team-main .team_info {
+  text-align: center;
+  bottom: 30px;
+  left: 40px;
+  right: 40px;
+  background: #fff;
+  padding: 20px 10px;
+  border-radius: 6px;
+}
+
+.team-main ul.team-social li {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.team-main ul.team-social li a {
+  color: #232020;
+}
+
+.team-main ul.team-social li a:hover {
+  color: #ff7315;
+}
+
+.team-main ul.team-social li a span.fa {
+  font-size: 15px;
+  margin-right: 6px;
+}
+
+.team-main .team-wrapper img {
+  width: 100%;
+}
 
 
 /* ......... *//* What We Do */
@@ -178,6 +303,15 @@ div a img {
     filter: brightness(10%);
 }
 
+/* Boot Camp */
+.bc-bg {
+  background: url(../img/bg3.jpg) no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
 
 /* ......... *//* Get Tutor */
 #more {
@@ -325,17 +459,10 @@ div a img {
     border: 1px solid orange;
 }
 
-.indexSocial:hover {
-    border-radius: 15%;
-    border: 1px solid black;
-}
-
 .helpSocial:hover {
     border-radius: 15%;
     border: 1px solid white;
 }
-
-
 
 
 /* ..........Media Query_Responsiveness............ */
@@ -343,8 +470,13 @@ div a img {
   /* ......navBar & Brand...... */
   @media (max-width: 768px) {
     /* .....motto..... */
-    div#home p#brand {
+    div#home p.brand {
       font-size: 55px !important;
+    }
+
+    div#home p img {
+      height: 50px; 
+      width: 50px;
     }
 
     div#motto {
@@ -373,22 +505,49 @@ div a img {
       margin: 0 auto;
       align-content: center;
       text-align: center;
+      font-size: 20px !important;
+    }
+
+    #navList li a:hover {
+      font-size: 25px !important;
     }
 
     /* .....Login Form..... */
-    div#formCasing-sm{
-      width: 100% !important;
-      padding-left: 0;
-      padding-right: 0;
+    div.modal {
+      overflow: auto;
+      width: 100%;
+      height: 100%; 
+      margin-right: auto !important;
     }
 
-    .imgLoginClose {
+    div#formCasing {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+
+    div#formCasing-sm.container {
+      width: 100% !important;
+      padding: 15px !important;
+      margin: 15px !important;
+    }
+
+    div#formCasing div#formCasing-sm form.p-5 {
+      padding: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    div.imgLoginClose span img {
       margin-right: auto !important;
       margin-left: auto !important;
+      margin-top: 0 !important;
+      height: 60px;
+      width: 60px;
+      padding: 0 !important;
     }
 
-    .modal-content-login{
+    div#mcl.modal-content-login {
       width: 100% !important;
+      padding: 0 !important;
     }
 
     .close {
@@ -396,13 +555,49 @@ div a img {
       text-align: center;
     }
 
-    #formFooter .col-md-6 {
+    div.formContent p.dn {
+      display: none;
+    }
+
+    div#formFooter.row {
       justify-content: center;
-      width: 100%;
+      display: inline !important;
+      width: 100% !important;
+      font-size: 15px;
+      text-align: center;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    div#formFooter.row .col-md-6 a:hover {
+      text-decoration: none;
+    }
+
+    div#formFooter.row div.col-md-6 {
+      justify-content: center;
+      display: inline !important;
+      width: 100% !important;
       font-size: 20px;
       text-align: center;
-      padding: 0;
-      margin: 0;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    div#formFooter.row.dib div.pad {
+      margin-right: 20px !important;
+    }
+
+    div#formFooter.row div.pad {
+      margin-right: 40px !important;
+    }
+
+    div#formFooter.row.dib {
+      display: inline-block !important;
+    }
+
+    div.form-group input.form-control {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
     }
 
     input {
@@ -412,39 +607,137 @@ div a img {
     }
 
     /* What We Do */
-    div#showCase-sm {
-      height: 1400px !important;
-      padding-bottom: 100px;
+    div#showCase-sm.orange {
+      height: 1100px !important;
     }
+
+    div#showCase-sm div.py-5 h2.heading {
+      font-size: 25px !important;
+    }
+
+    div.colCont {
+      margin-right: 15px;
+      margin-left: 15px;
+    }   
 
     p.animate {
       font-size: 40px !important;
     }
 
-    h2.heading {
-      font-size: 30px !important;
+    /* What We Do Page */
+    h1.text-center.heading-bg.pt-5.pb-2.text-danger {
+      font-size: 30px;
     }
 
-    div.colCont-sm {
-      margin-right: 10px;
-      margin-left: 10px;
-    }   
+    div.features4-grids.text-center.row.mt-5 {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
 
+    div.container.chng {
+      width: 100% !important;
+    }
+
+    div.container.chng a.disabled {
+      margin-left: 150px;
+    }
+
+    div#regComp.py-5 div.container {
+      width: 100% !important;
+    }
+
+    /* Advisory Board */
+    section.team-main h1.adB {
+      font-size: 30px;
+      margin-top: 90px !important;
+    }
+
+    section.team-main div.team-row {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    section.team-main div.team-row div.team-wrapper a  img {
+      height: 90%;
+    }
+
+    /* Consultation */
+    div.orange div.text-center h3 {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
     /* Contact Us */
     div.btnCont-resize {
       width: 50% !important;
     }
 
+    div.container.cf {
+      width: 100% !important;
+    }
+
+    p.display-3.ct {
+      font-size: 60px !important;
+    }
+
     p.frd {
       font-size: 40px !important;
     }
+
+    /* Get a Tutor */
+    div.bg-light div.policies {
+      width: 100% !important;
+    }
+
+    div.container-fluid.py-5.orange.text-white div.container.pt-5 div.pb-5.how {
+      display: none;
+    }
+
+    div.col-md-6.pt-lg-3.pd {
+      position: relative;
+    }
+
+    div.col-md-6.pt-lg-3.zid {
+      position: absolute;
+      z-index: 1;
+    }
+
+    div.col-md-6.pt-lg-3.imgPD.pd {
+      margin-top: 225px;
+    }
+
+    div.col-md-6.pt-lg-3.imgPD.pd.pdmore {
+      margin-top: 305px;
+    }
+
+    div.col-md-6 img.shadow.border.border-white.rounded.imgResize {
+      width: 25rem !important;
+      height: 17rem !important;
+      margin-top:30px;
+      margin-left: 20px;
+    }
+
+    p.h4.text-justify.pt-4.pl-5.padText {
+      padding-right: 15px;
+      font-size: 22px;
+    }
+    
   }
 
 
-
   /* For mobile screens of 991px and below */
-  @media (max-width: 991px) {
-    div#motto{
+  @media (min-width: 769px) and (max-width: 991px) {
+     /* .....motto..... */
+     div#home p.brand {
+      font-size: 70px !important;
+    }
+
+    div#home p img {
+      height: 60px; 
+      width: 60px;
+    }
+
+    div#motto {
       width: 100% !important;
       padding: 0;
       margin: 0;
@@ -452,8 +745,8 @@ div a img {
       margin-right: auto;
     }
 
-     /* navToggle & Content */
-     #navButton {
+    /* navToggle & Content */
+    #navButton {
       position: static;
       background-color: orange;
       margin-left: auto;
@@ -470,38 +763,95 @@ div a img {
       margin: 0 auto;
       align-content: center;
       text-align: center;
+      font-size: 23px !important;
+    }
+
+    #navList li a:hover {
+      font-size: 25px !important;
     }
 
     /* .....Login Form..... */
-    div#formCasing-sm{
-      width: 50% !important;
-      padding-left: 0;
-      padding-right: 0;
+    div.modal {
+      overflow: auto;
+      width: 100%;
+      height: 100%; 
+      margin-right: auto !important;
     }
 
-    .imgLoginClose {
+    div#formCasing {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+
+    div#formCasing-sm.container {
+      width: 70% !important;
+    }
+
+    div#formCasing div#formCasing-sm form.p-5 {
+      padding: 25px !important;
+      margin-top: 0 !important;
+    }
+
+    div.imgLoginClose span img {
       margin-right: auto !important;
       margin-left: auto !important;
+      margin-top: 0 !important;
+      height: 70px;
+      width: 70px;
+      padding: 0 !important;
     }
-    
-    .modal-content-login{
+
+    div#mcl.modal-content-login {
       width: 100% !important;
+      padding: 0 !important;
     }
-    
+
     .close {
       float: none;
       text-align: center;
     }
-    
-    #formFooter .col-md-6 {
+
+    div#formFooter.row {
       justify-content: center;
-      width: 100%;
+      display: inline !important;
+      width: 100% !important;
+      font-size: 15px;
+      text-align: center;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    div#formFooter.row .col-md-6 a:hover {
+      text-decoration: none;
+    }
+
+    div#formFooter.row div.col-md-6 {
+      justify-content: center;
+      display: inline !important;
+      width: 100% !important;
       font-size: 20px;
       text-align: center;
-      padding: 0;
-      margin: 0;
+      padding: 0 !important;
+      margin: 0 !important;
     }
-    
+
+    div#formFooter.row.dib div.pad {
+      margin-right: 80px !important;
+    }
+
+    div#formFooter.row div.pad {
+      margin-right: 120px !important;
+    }
+
+    div#formFooter.row.dib {
+      display: inline-block !important;
+    }
+
+    div.form-group input.form-control {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
     input {
       width: 90%;
       padding: 0;
@@ -509,55 +859,81 @@ div a img {
     }
 
     /* What We Do */
-    div#showCase-sm {
-      height: 830px !important;
-      padding-bottom: 80px;
+    div#showCase-sm.orange {
+      height: 850px !important;
     }
-    
+
+    div#showCase-sm div.py-5 h2.heading {
+      font-size: 30px !important;
+    }
+
     p.animate {
       font-size: 40px !important;
     }
-    
-    h2.heading {
-      font-size: 30px !important;
+
+    div.card.shadow.border.border-light.bg-warning.p-3.col-lg-4.col-md-6.cenLast {
+      margin-left: auto;
+      margin-right: auto;
     }
-    
+
     /* Advisory Board */
-    .adB {
-      font-size: 33px;
+    section.team-main h1.adB {
+      font-size: 35px;
     }
 
-    .secCont {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
+    section.team-main div.team-row {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    section.team-main div.team-row div.cenLast {
+      margin-left: auto;
+      margin-right: auto; 
+    }
+
+    /* Consultation */
+    div.orange div.text-center h3 {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+    /* Contact Us */
+    p.frd {
+      font-size: 40px !important;
+    }
+
+    /* Get a Tutor */
+    div.container-fluid.py-5.orange.text-white div.container.pt-5 {
+      width: 100% !important;
       margin-left: 0 !important;
-      margin-right: 0 !important;     
-    }
-    
-    .advisor-img {
-      height: 7rem;
-      width: 7rem;
-    }
-    
-    .advName {
-      font-size: large;
+      margin-right: 0 !important;
     }
 
-    .advDesc{
-      font-size: medium;
+    div.col-md-6.pt-lg-3 {
       padding-left: 0 !important;
       padding-right: 0 !important;
+    }
+
+
+    /* (Pre) Footer */
+    div.container-fluid.orange.py-5.shadow div.row.p-5.shadow.container.mx-auto {
+      padding: 0 !important;
+    }
+
+    div.container-fluid.orange.py-5.shadow div.row.p-5.shadow.container.mx-auto div.addSHD {
+      box-shadow: 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+    }
+    
+    div.container-fluid.orange.py-5.shadow div.row.p-5.shadow.container.mx-auto div.cenLast {
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
 
   /* For mobile screens of 1400px and below */
-  @media (max-width: 1400px) {
+  @media (min-width: 991px) and (max-width: 1400px) {
       /* .....Login Form..... */
-      div#formCasing-sm {
-        width: 60% !important;
-      }
-
       div#formCasing {
         margin: 5px 50px !important;
       }
@@ -598,4 +974,22 @@ div a img {
       }
   }
 
-/* a href="tel:080Academia", a href="https://api.whatsapp.com/send?phone=23480Academia", 1080,991,600,768, */
+  .tutor-can-do-it {
+    display:none;
+}
+
+.tutor-can-do-it , .student-can-do-it{
+padding: 2em;
+
+}
+
+.changePane {
+margin-top: 10px;
+border: 1px solid #fff;
+padding: 2px;
+background-color: #fff;
+border-top-right-radius: 5px;
+border-bottom-left-radius: 5px;
+box-shadow: 1px 1px 1px 1px;
+cursor: pointer;
+}
