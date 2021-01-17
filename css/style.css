@@ -973,23 +973,3 @@ div a img {
         margin: 0;
       }
   }
-
-  .tutor-can-do-it {
-    display:none;
-}
-
-.tutor-can-do-it , .student-can-do-it{
-padding: 2em;
-
-}
-
-.changePane {
-margin-top: 10px;
-border: 1px solid #fff;
-padding: 2px;
-background-color: #fff;
-border-top-right-radius: 5px;
-border-bottom-left-radius: 5px;
-box-shadow: 1px 1px 1px 1px;
-cursor: pointer;
-}

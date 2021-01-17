@@ -9,6 +9,7 @@
     <!-- ................Fonts...................... -->
       <!-- Trebuchet MS -->
       <link rel="stylesheet" href="../fonts/Trebuchet MS/Trebuchet-MS.ttf">
+
       <style>
         .tutor-can-do-it {
               display:none;
@@ -36,12 +37,12 @@
 
 <body>
 <!-- .................Navbar Section.................. -->
-<div class="py-5" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('img/bg.jpg'); background-size: cover; background-repeat: no-repeat;">
+<div class="py-5" style="background-image: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), url('../img/bg.jpg'); background-size: cover; background-repeat: no-repeat;">
 
 <!-- Brand -->
 <div id="home" class="container-fluid pt-5">
-  <p id="text" class="display-3 pt-3 pb-0 mb-0 text-center myTextColor font-weight-bold"><img class="mb-3" height= 70px; width= 70px; src="../img/favIcon.png">A</p>
-  <div id="motto" class="container w-25 text-center lead text-danger font-italic h6 font-weight-bold">...aid for excellence!</div>
+  <p id="text" class="display-2 brand pt-3 pb-0 mb-0 text-center myTextColor font-weight-bold"><img class="mb-3 mr-3" height= 90px; width= 90px; src="../img/favIcon.png"> A</p>
+  <div id="motto" class="container w-25 text-center lead text-danger font-italic h1 font-weight-bold">...aid for excellence!</div>
 </div>
 
 <!-- .....Nav Links...... -->
@@ -55,19 +56,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul id="navList" class="nav navbar-nav navbar-right mx-auto ul-nav-bl lead py-3">
           <!-- Triggers The Modal -->
-          <li class="nav-item mx-5"><a id="myBtn" class="nav-link font-weight-bold text-danger" href="#form">LOGIN</a></li>
+          <li class="nav-item mx-5"><a id="myBtn" class="nav-link font-weight-bold h4 text-danger" href="#formCasing">LOGIN</a></li>
 
           <!-- The Modal -->
           <div id="myModal" class="modal">
 
             <!-- Modal content -->
-            <div class="modal-content-login">
+            <div id="mcl" class="modal-content-login">
 
                 <!-- ...................................................Login-Form........................................................... -->
                  <div id="formCasing" class="container-fluid p-5">
                     <div id="formCasing-sm" class="container w-50 orange border border-danger" style="border-top-right-radius:50px; border-bottom-left-radius:50px">
                       
-                        <form class="student-can-do-it" action="login.php" method="GET" class="p-5 col-12 shadow">
+                             
+                    <form class="student-can-do-it"  method="POST" class="p-5 col-12 shadow">
                           <div class="formContent">
                           
                           <div class="container imgLoginClose w-25 pb-3 text-center">
@@ -79,16 +81,34 @@
                           <br>
 
                             <div class="form-group">
-                                <input type="email" id="email" class="form-control shadow" name="con_email" placeholder="Email">
+                                <input type="text" id="email" class="form-control shadow" name="con_email" placeholder="Username...">
                             </div>
                             <br>
                             
                             <div class="form-group shadow">
-                                <input type="text" id="password" class="form-control" name="password" placeholder="Password">
+                                <input type="password" id="password" class="form-control" name="password" placeholder="Password">
                             </div>
                             <br>
 
-                            <input class="btn btn-lg btn-outline-danger btn-block shadow" type="submit" name="login_button" value="Log in">
+                            <input class="btn btn-lg btn-outline-danger btn-block shadow" type="submit" name="login_button-student" value="Log in">
+
+                            <?php 
+                            
+                            if(isset($_POST["login_button-student"])){
+
+                              $con_email = $_POST["con_email"];
+                              $password = $_POST["password"];
+
+
+                              $key = "1234567opiuyt" ;
+
+                            
+                               loginStudent($student,$key, $con_email,$password);
+                            }
+                        
+                        ?>
+
+
 
                             <div id="formFooter" class="row my-3 container">
                                 <div class="col-md-6">
@@ -96,7 +116,7 @@
                                 </div>
                                     
                                 <div class="col-md-6">
-                                    <a href="./o.pages/get-a-tutor.php" class="text-left text-dark">Register here!</a>
+                                    <a href="./get-a-tutor.php" class="text-left text-dark">Register here!</a>
                                 </div>
                             </div>
 
@@ -114,7 +134,9 @@
                           </div>
                         </form>
 
-                        <form class="tutor-can-do-it" action="login.php" method="GET" class="p-5 col-12 shadow">
+<!-----------||||||||||||||||||||||||||||||||||||----->
+
+                        <form class="tutor-can-do-it"  method="post" class="p-5 col-12 shadow">
                           <div class="formContent">
                           
                           <div class="container imgLoginClose w-25 pb-3 text-center">
@@ -131,11 +153,26 @@
                             <br>
                             
                             <div class="form-group shadow">
-                                <input type="text" id="password" class="form-control" name="password" placeholder="Password">
+                                <input type="password" id="password" class="form-control" name="password" placeholder="Password">
                             </div>
                             <br>
 
-                            <input class="btn btn-lg btn-outline-danger btn-block shadow" type="submit" name="login_button" value="Log in">
+                            <input type="submit" class="btn btn-lg btn-outline-danger btn-block shadow" type="submit" name="login_button" value="Log in">
+
+                            <?php 
+                            
+                                if(isset($_POST["login_button"])){
+
+                                  $con_email = $_POST["con_email"];
+                                  $password = $_POST["password"];
+
+
+                                  $key = "1234567opiuyt" ;
+
+                                  loginTutor ($tutor,$key, $con_email,$password);
+                                }
+                            
+                            ?>
 
                             <div id="formFooter" class="row my-3 container">
                                 <div class="col-md-6">
@@ -143,7 +180,7 @@
                                 </div>
                                     
                                 <div class="col-md-6">
-                                    <a href="./o.pages/become-a-tutor.php" class="text-left text-dark">Register here!</a>
+                                    <a href="./become-a-tutor.php" class="text-left text-dark">Register here!</a>
                                 </div>
                             </div>
 
@@ -167,9 +204,9 @@
           </div>
           </li>
           
-          <li class="nav-item mx-5"><a class="nav-link font-weight-bold text-danger" href="o.pages/about.php">ABOUT</a></li>
-          <li class="nav-item mx-5"><a class="nav-link font-weight-bold text-danger" href="o.pages/FAQs.php">FAQs</a></li>
-          <li id="consult" class="nav-item mx-5"><a class="nav-link font-weight-bold text-danger" href="o.pages/consultancy.php">CONSULTANCY</a></li>
+          <li class="nav-item mx-5"><a class="nav-link font-weight-bold h4 text-danger" href="../o.pages/about.php">ABOUT</a></li>
+          <li class="nav-item mx-5"><a class="nav-link font-weight-bold h4 text-danger" href="../o.pages/FAQs.php">FAQs</a></li>
+          <li class="nav-item mx-5"><a class="nav-link font-weight-bold h4 text-danger" href="../o.pages/blog.php">BLOG</a></li>
         </ul>
       </div>
         

@@ -936,7 +936,6 @@ include "../controllers/Student.php";
   </div>
 </div>
 
-
 <!-- Become Tutor -->
 <div class="p-5" style="background: #f4f4f4;">
   <h1 class="text-center fontStyle pt-5 text-danger">Become<span class="myTextColor"> a Tutor</span></h1>
