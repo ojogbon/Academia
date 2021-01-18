@@ -141,6 +141,7 @@ function loginStaff ($staff,$key, $staff_email,$staff_password){
                           $_SESSION["staff_Online_fullName"] = $staff_Online[0]["firstname"] . " ".$staff_Online[0]["lastname"] ;
                           $_SESSION["staff_Online_id"] = $staff_Online[0]["id"];
                           $_SESSION["staff_Online_image"] = $staff_Online[0]["image"];
+                          echo 5657;
                           echo "<script> location.replace('dashboard.php');</script>";
 
                     }else{
