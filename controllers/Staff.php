@@ -135,6 +135,7 @@ function loginStaff ($staff,$key, $staff_email,$staff_password){
             }else{
                     $sql = "select * from staff_tbl where email = '$staff_email' and password = '$staff_password'";
                 
+                    echo 565656;
                     $staff_Online = $staff->getAllStaffBySql($sql);
                 
                     if(count($staff_Online) > 0){
