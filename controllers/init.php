@@ -11,5 +11,5 @@ $parent_path = $dev_path == "dev" ? "Academia/" : "/";
 
 
      include ($_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/MainModel.php');
-     echo $_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/MainModel.php';
+     echo $_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/MainModel.php ';
      $mainModel = new MainModel();

@@ -62,10 +62,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<?php 
 			
 				if(isset($_POST["pleasejustdothelogin"])){
+					echo 8888;
 						$itusername = $_POST["itusername"];
 						$itpassword = $_POST["itpassword"];
 
 						$key = "1234567opiuyt";
+
+						echo $_SERVER['DOCUMENT_ROOT']."/". $parent_path.'models/MainModel.php';
 						
 						loginStaff ($staff,$key, $itusername,$itpassword);
 				}
