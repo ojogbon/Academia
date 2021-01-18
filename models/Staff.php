@@ -38,6 +38,7 @@ public function getAllStaff()
 
     public function getAllStaffBySql($sql)
     {
+      echo $sql;
         $result = $this->db->getAll($sql);
             return $result;
     }
