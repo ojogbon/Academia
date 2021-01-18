@@ -137,7 +137,7 @@ function loginStaff ($staff,$key, $staff_email,$staff_password){
                 
                     echo 565656;
                     $staff_Online = $staff->getAllStaffBySql($sql);
-                
+                    echo "halllleluuu";
                     if(count($staff_Online) > 0){
                           $_SESSION["staff_Online_fullName"] = $staff_Online[0]["firstname"] . " ".$staff_Online[0]["lastname"] ;
                           $_SESSION["staff_Online_id"] = $staff_Online[0]["id"];
